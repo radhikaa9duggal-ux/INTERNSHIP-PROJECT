@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { getPopularMoviesUrl, getSearchMoviesUrl, TMDB_BASE_URL } from '../services/tmdb';
+import { mockMoviesData } from '../data/mockMovies';
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
@@ -75,6 +76,20 @@ export function useMovies(selectedGenreId = null) {
       setPage(data.page);
 
     } catch (err) {
+      console.warn('TMDB API fetch failed, falling back to mock data:', err);
+      
+      // Fallback to mock data
+      const fetchedMovies = mockMoviesData.results || [];
+      if (append) {
+        setMovies(prev => {
+          const existingIds = new Set(prev.map(m => m.id));
+          return [...prev, ...fetchedMovies.filter(m => !existingIds.has(m.id))];
+        });
+      } else {
+        setMovies(fetchedMovies);
+      }
+      setHasMore(false); // No pagination for mock data
+      
       setError(err.message || 'Failed to fetch movies.');
     } finally {
       setLoading(false);

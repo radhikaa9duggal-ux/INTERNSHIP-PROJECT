@@ -1,0 +1,71 @@
+export const mockMoviesData = {
+  page: 1,
+  results: [
+    {
+      adult: false,
+      backdrop_path: "/qrGtVFwDIt2M7i96r1Z00kLri64.jpg",
+      genre_ids: [28, 878, 12],
+      id: 823464,
+      original_language: "en",
+      original_title: "Godzilla x Kong: The New Empire",
+      overview: "Following their explosive showdown, Godzilla and Kong must reunite against a colossal undiscovered threat hidden within our world, challenging their very existence – and our own.",
+      popularity: 3878.508,
+      poster_path: "/tMefBSflR6PGQLvLuPEQ4e8HkGk.jpg",
+      release_date: "2024-03-27",
+      title: "Godzilla x Kong: The New Empire",
+      video: false,
+      vote_average: 7.206,
+      vote_count: 2470
+    },
+    {
+      adult: false,
+      backdrop_path: "/fqv8v6AycXKsivp1T5yKtLb21h4.jpg",
+      genre_ids: [878, 12, 28],
+      id: 653346,
+      original_language: "en",
+      original_title: "Kingdom of the Planet of the Apes",
+      overview: "Several generations in the future following Caesar's reign, apes are now the dominant species and live harmoniously while humans have been reduced to living in the shadows. As a new tyrannical ape leader builds his empire, one young ape undertakes a harrowing journey that will cause him to question all that he has known about the past and to make choices that will define a future for apes and humans alike.",
+      popularity: 3662.665,
+      poster_path: "/bXDk1oEw7I2K87IfV0Hq7kK2Uq7.jpg",
+      release_date: "2024-05-08",
+      title: "Kingdom of the Planet of the Apes",
+      video: false,
+      vote_average: 7.025,
+      vote_count: 535
+    },
+    {
+      adult: false,
+      backdrop_path: "/1wP1cQ8R7n6k3r5hJ3vtvlqW1nB.jpg",
+      genre_ids: [878, 12, 28],
+      id: 693134,
+      original_language: "en",
+      original_title: "Dune: Part Two",
+      overview: "Paul Atreides unites with Chani and the Fremen while living with them. Meanwhile, his path places him in a deadly struggle where he must choose between the love of his life and the fate of the known universe, facing unexpected consequences as he embraces his destiny.",
+      popularity: 2000.123,
+      poster_path: "/1EGB0XoG4qY0pdtP8n3VXYv7K4i.jpg",
+      release_date: "2024-02-27",
+      title: "Dune: Part Two",
+      video: false,
+      vote_average: 8.2,
+      vote_count: 4320
+    },
+    {
+      adult: false,
+      backdrop_path: "/tdMACvwFEFqP5U2uS9L2m4Q5t9G.jpg",
+      genre_ids: [16, 12, 10751, 35],
+      id: 1011985,
+      original_language: "en",
+      original_title: "Kung Fu Panda 4",
+      overview: "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+      popularity: 1543.83,
+      poster_path: "/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg",
+      release_date: "2024-03-02",
+      title: "Kung Fu Panda 4",
+      video: false,
+      vote_average: 7.1,
+      vote_count: 1721
+    }
+  ],
+  total_pages: 1,
+  total_results: 4
+};
